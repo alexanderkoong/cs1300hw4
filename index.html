@@ -262,14 +262,15 @@
 <body>
     <header>
         <h1>Chong Qing House Responsive Redesign</h1>
-        <p class="subtitle">A case study in improving usability and accessibility for a restaurant website</p>
+        <p class="subtitle">A case study in improving usability and accessibility for one of my favorite restaurant's online website</p>
     </header>
     <div class="container">
         <div class="intro">
             <div class="intro-text">
                 <h2>Background/Motivation</h2>
-                <p>Chong Qing House is one of my favorite restaurants in Providence, RI. While their food is excellent, their online ordering website presented numerous usability and accessibility challenges. This project demonstrates my process of analyzing, redesigning, and implementing a more user-friendly and responsive website.</p>
-                <p>The goal was to create an interface that is efficient, learnable, memorable, and accessible across all device sizes.</p>
+                <p>Chong Qing House is one of my favorite restaurants in Providence, RI. While their food is excellent, their online ordering website was always very hard to use. Additionally, it was not mobile-device friendly (webisite would not resize), so I couldn't  order when I wasn't by my computer. This project demonstrates my process of analyzing, redesigning, and implementing a more user-friendly and responsive website that is personally meaningful to me.</p>
+            
+
             </div>
         </div>
         
@@ -333,6 +334,8 @@
                     <li>Keyboard navigation was extremely difficult - tip button was #223 in tab order</li>
                     <li>No ability to navigate between food subcategories using keyboard shortcuts</li>
                     <li>Not designed for all screen sizes; only designed for large computer screen</li>
+                    <li>Default font resizing does not work; cannot translate website to different languages</li>
+
                 </ul>
             </div>
             <div class="usability-image-container">
@@ -342,7 +345,7 @@
 
         <div class="usability-grid">
             <div class="usability-card">
-                <h3>Why This Matters</h3>
+                <h3>Why This Matters/How This Impacts User Experience</h3>
                 <p>These accessibility issues create significant barriers for many users:</p>
                 <ul>
                     <li>Low contrast and ineffiencies in layout/spacing makes content very difficult to read for users with visual impairments</li>
@@ -355,7 +358,7 @@
         </div>
 
         <h2>Visual Redesign</h2>
-        <p>Based on the problems identified, I created a visual design style guide and mockups for various screen sizes.</p>
+        <p>Based on the problems identified, I decided to redesign the Chong Qing website. I first created a visual design style guide and mockups for various screen sizes.</p>
 
         <div class="before-after">
             <div class="image-comparison">
@@ -370,9 +373,21 @@
         <h2>Mockups</h2>
         <div class="usability-card">
             <h3>Initial Mockups</h3>
-            <p>These were my first three mockups created in Figma. I focused on implementing the style guide elements while exploring different layouts and interaction patterns. Each mockup iteratively improved upon user feedback and usability considerations, helping me refine the final design direction.</p>
+            <p>These were my first three mockups created in Figma. I focused on implementing the style guide elements while exploring different layouts and interaction patterns. Each mockup iteratively improved upon user feedback and usability considerations, helping me refine the final design direction. These were my initial mockups, before receiving feedback. While similar, the current and final website redesign looks different from these initial mockups - highlighting the iterative design feedback process.  </p>
         </div>
         
+        <p>  </p>
+        <div class="usability-card">
+            <h3>Consistent Visual Cues</h3>
+            <p>My redesign establishes a consistent visual language through carefully selected color combinations and component styling that remains uniform across all screen sizes and interactive states. 
+            
+                <li>Each interactive element maintains recognizable visual cues—such as the distinctive red border on selection, shadow effects on hover, and consistent iconography. </li> 
+        <li> For actions like adding items to cart, my redesign ensures that users can easily identify and predict behavior regardless of device or context  </li>
+        <li>This visual consistency extends to the structural elements of the interface, with containers, cards, and buttons sharing proportional spacing and styling relationships even as they adapt to different viewport sizes. </li>
+        <li> By maintaining these visual patterns throughout the experience, users can seamlessly transfer between desktop, tablet, and mobile interactions, reducing the learning curve associated with cross-device usage.</li>
+            </p>
+            </div>
+            <p>  </p>
         <div class="mockup-container" style="display: flex; justify-content: space-between; flex-wrap: nowrap; gap: 20px;">
             <div class="mockup-item" style="flex: 1; display: flex; flex-direction: column; align-items: center;">
                 <div style="width: 100%; height: 300px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
@@ -400,7 +415,7 @@
         <h2>Feedback/Responsive Implementation</h2>
         <ul>
             <li>After receiving feedback on my initial designs, I realized there wasn't enough differentiation between layouts at different screen sizes.</li>
-            <li>The text on phone-sized screens would be too small to read with my original approach.</li>
+            <li>The text on phone-sized/tablet screens would be too small to read with my original approach.</li>
             <li>I refined my responsive strategy to better accommodate each device type:
                 <ul>
                     <li>A three-column layout for large computers</li>
@@ -424,12 +439,12 @@
             
             <div class="device">
                 <h3>Mobile</h3>
-                <p>Single-column layout focusing on essential content, with a sticky header for navigation and a floating cart button for easy access during browsing.</p>
+                <p>Single-column layout focusing on essential content with an emphasis on scrolling to view the additional columns (ensuring text size remains large enough to read).</p>
             </div>
         </div>
 <!-- Movie Section -->
         <div class="movie-section">
-            <h2>Resizing Demo</h2>
+            <h2>Resizing/Element Transition Demo</h2>
             <div class="video-container">
                 <video controls width="100%">
                     <source src="resizingdemo.mov" type="video/mp4">
@@ -439,7 +454,7 @@
         </div>
 
         <div class="movie-section">
-            <h2>Language Change Demo</h2>
+            <h2>Language/Text Size Change Demo</h2>
             <div class="video-container">
                 <video controls width="100%">
                     <source src="changelanguage.mov" type="video/mp4">
@@ -453,25 +468,32 @@
 
         <h2>How does this redesign impact usability? </h2>
         <ul>
-            <li><strong>Increased Efficiency:</strong> Removed redundant buttons and simplified navigation, which will allow users to more easily order food options. The updated website now shows all menu options at once and is overall simpler/cleaner - all while conveying the same information. </li>
+            <li><strong>Increased Efficiency:</strong> Removed redundant buttons and simplified navigation, which will allow users to more easily order food options. The updated website now shows all menu options at once and is overall simpler/cleaner - all while conveying the same information. The updated color scheme additionally makes it easier to read/identify menu options. Each menu option now additionally has an image associated with it. </li>
             <li><strong>Better Learnability/Intuitive Interactions:</strong> Added clear visual cues for adding items to cart and proceeding to checkout, eliminating confusion about how to add a menu item to cart. Also added in new buttons such as the +/- buttons to simplify adding/removing quantities of particular orders. </li>
-            <li><strong>Dynamic Resizing</strong> New implementation can be adapted to all screen sizes, allowing for people to view this webpage on mobile devices, tablets, and computers. This will allow people to easily order - regardless of device type. </li>
+            <li><strong>Interaction Resizing</strong> New implementation can be adapted to all screen sizes, allowing for people to view this webpage on mobile devices, tablets, and computers. This will allow people to easily order - regardless of device type. </li>
+
+            <p> </p>
+            
+            <p> Overall, my new design is sleeker, simpler/more intuitive to use - all while conveying the exact same information as the original Chong Qing website. </p>
+       
         </ul>
 
         <h2>How does this redesign impact accessibility?</h2>
         <ul>
             <li><strong>Enhanced Color Contrast:</strong> Replaced the problematic red text on yellow background with higher contrast color combinations that meet WCAG standards, making content readable for users with visual impairments</li>
-            <li><strong>Keyboard Navigation:</strong> Restructured the tab order to allow keyboard users to access important functions (like checkout) without navigating through hundreds of menu items first. This will allow disable people who cannot use mouses to easily navigate the website.</li>
-            <li><strong>Consistent Interactive Elements:</strong> Implemented clear visual indicators for clickable elements, visual patterns are now much more clear.</li>
+            <li><strong>Keyboard Navigation:</strong> Restructured the tab order to allow keyboard users to access important functions (like checkout) without navigating through hundreds of menu items first. This will allow disabled people who cannot use mouses to easily navigate the website.</li>
+            <li><strong>Consistent Interactive Elements:</strong> Implemented clear visual indicators for clickable elements, visual patterns are now much more clear. This will help those with attention/learning/cognitive disabilities. </li>
             <li><strong>Proper Screen Resizing:</strong> Increased text, button, and title sizes to be usable regardless of screen size,  making the site more usable for people with motor control disabilities.</li>
+            <li><strong>Language/Font Sizing:</strong> Users can now easily translate the web page to a different language for clear ordering. Users who require larger default font sizes will now have a website that updates accordingly.  </li>
+
         </ul>
 
         <h2>Conclusion</h2>
         <p>This project demonstrates my approach to identifying usability issues and implementing responsive design solutions. By focusing on user needs and following best practices in web design, I transformed a challenging interface into an intuitive and accessible experience.</p>
         
-        <p>The redesigned website is now responsive across all device sizes while maintaining a consistent visual language and improving the overall user experience.</p>
+        <p>The redesigned website is now responsive across all device sizes and available to view here!</p>
         
-        <p>View the website here: <a href="https://alexanderkoong.github.io/chongqingwebsite/" target="_blank">Chong Qing House Redesigned Website</a></p>
+        <p>Link to website: <a href="https://alexanderkoong.github.io/chongqingwebsite/" target="_blank">Click Here!</a></p>
     </div>
 
 </body>
