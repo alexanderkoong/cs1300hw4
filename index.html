@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chong Qing House Redesign | UX Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Saira:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* CSS Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Saira', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 2rem;
+            padding: 2rem 0;
+            background-color: #7D323E;
+            color: white;
+            border-radius: 8px;
+        }
+
+        h1 {
+            font-family: 'Saira', sans-serif;
+            font-weight: 700;
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        h2 {
+            font-family: 'Saira', sans-serif;
+            font-weight: 700;
+            font-size: 1.8rem;
+            margin: 2rem 0 1rem;
+            color: #7D323E;
+            border-bottom: 2px solid #E8C78E;
+            padding-bottom: 0.5rem;
+        }
+
+        h3 {
+            font-family: 'Saira', sans-serif;
+            font-weight: 600;
+            font-size: 1.4rem;
+            margin: 1.5rem 0 0.75rem;
+            color: #7D323E;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .container {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
+        }
+
+        .intro {
+            display: flex;
+            gap: 2rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .intro-text {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .usability-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .usability-card {
+            background-color: #f4f4f4;
+            padding: 1.25rem;
+            border-radius: 8px;
+            border-left: 4px solid #7D323E;
+        }
+
+        .before-after {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .image-comparison {
+            background-color: #f4f4f4;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #E8C78E;
+        }
+
+        .design-process {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .process-card {
+            background-color: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-top: 4px solid #E8C78E;
+        }
+
+        .process-card h3 {
+            margin-top: 0;
+        }
+
+        .responsive-display {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .device {
+            background-color: #f4f4f4;
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-align: center;
+            border-left: 4px solid #7D323E;
+        }
+
+        .accessibility-improvements {
+            background-color: #f4f9ff;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+            border-left: 4px solid #7D323E;
+        }
+
+        .accessibility-improvements ul {
+            margin-left: 1.5rem;
+            margin-top: 0.5rem;
+        }
+
+        ul {
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        a {
+            color: #7D323E;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s ease;
+        }
+
+        a:hover {
+            color: #E8C78E;
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 3rem;
+            padding: 1.5rem;
+            background-color: #333;
+            color: white;
+            border-radius: 8px;
+        }
+
+        .original-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .image-caption {
+            text-align: center;
+            font-style: italic;
+            color: #59595B;
+            margin-bottom: 1.5rem;
+        }
+
+        .usability-image {
+            max-width: 100%;
+            height: auto;
+            object-fit: contain;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.5rem;
+            }
+            
+            .container {
+                padding: 1.5rem;
+            }
+        }
+
+        .usability-image {
+            max-width: 100%;
+            height: auto;
+            object-fit: contain;
+            border: none;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+            border-radius: 4px;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.5rem;
+            }
+            
+            .container {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Chong Qing House Responsive Redesign</h1>
+        <p class="subtitle">A case study in improving usability and accessibility for a restaurant website</p>
+    </header>
+    <div class="container">
+        <div class="intro">
+            <div class="intro-text">
+                <h2>Background/Motivation</h2>
+                <p>Chong Qing House is one of my favorite restaurants in Providence, RI. While their food is excellent, their online ordering website presented numerous usability and accessibility challenges. This project demonstrates my process of analyzing, redesigning, and implementing a more user-friendly and responsive website.</p>
+                <p>The goal was to create an interface that is efficient, learnable, memorable, and accessible across all device sizes.</p>
+            </div>
+        </div>
+        
+        <img src="chongqinghome.png" alt="Original Chong Qing House website homepage" class="original-image">
+        <p class="image-caption">The original Chong Qing House homepage viewed on a standard computer web browser.</p>
+
+        <h2>Identifying Usability Problems</h2>
+        <p>I evaluated the original website against three key usability criteria and performed an accessibility analysis:</p>
+        <div class="usability-grid">
+            <div class="usability-card">
+                <h3>Efficiency (6/10)</h3>
+                <p>The original website contained numerous extraneous elements that hindered efficiency:</p>
+                <ul>
+                    <li>"Select Order Type" button is redundant; there is only one order type</li>
+                    <li>Address change button is redundant; there is only one location</li>
+                    <li>Logo with image of food takes up valuable space and hides cuts off some menu options</li>
+                    <li>"Store Info" button offers no new infromation and instead creates a confusing loop in the navigation</li>
+                    <li>DoorDash header also takes up valuable space and instead could be moved to "Select Order Type" button</li>
+                    <li>Due to the inefficiencies in space, not all submenu options are easily viewable (Diet Dishes, Side, Order, and Dessert are all cut off) </li>
+
+
+                </ul>
+            </div>
+            <div class="usability-image-container">
+                <img src="selectordertype.png" alt="Screenshot showing efficiency issues on the original website" class="usability-image">
+                <img src="storeinfo.gif" alt="Screenshot showing redundant store info button on the original website" class="usability-image">
+            </div>
+        </div>
+        <div class="usability-grid">
+            <div class="usability-card">
+                <h3>Learnability (8/10)</h3>
+                <p>While generally clean, there were initial barriers:</p>
+                <ul>
+                    <li>Unclear how to add items to cart (no "click to add" or cart icons)</li>
+                    <li>Checkout button state (dimmed until cart has items) wasn't obvious</li>
+                </ul>
+            </div>
+            <div class="usability-image-container">
+                <img src="image3.png" alt="Screenshot showing learnability issues on the original website" class="usability-image">
+            </div>
+        </div>
+
+        <div class="usability-grid">
+            <div class="usability-card">
+                <h3>Memorability (8/10)</h3>
+                <p>Once learned, the process was fairly intuitive, but users might forget:</p>
+                <ul>
+                    <li>How do I add a tip? Why does it say edit tip when there is no tip added? What if I don't want to tip?</li>
+                    <li>That the checkout button requires items in cart to be clickable</li>
+                </ul>
+            </div>
+            <div class="usability-image-container">
+                <img src="hori.png" alt="Screenshot showing memorability issues on the original website" class="usability-image">
+            </div>
+        </div>
+        <div class="usability-grid">
+            <div class="usability-card">
+                <h3>Accessibility Issues (WebAIM WAVE Analysis)</h3>
+                <ul>
+                    <li>Very low contrast between red text and yellow highlights in header</li>
+                    <li>Keyboard navigation was extremely difficult - tip button was #223 in tab order</li>
+                    <li>No ability to navigate between food subcategories using keyboard shortcuts</li>
+                    <li>Not designed for all screen sizes; only designed for large computer screen</li>
+                </ul>
+            </div>
+            <div class="usability-image-container">
+                <img src="accessibliity.png" alt="Screenshot showing accessibility issues on the original website" class="usability-image">
+            </div>
+        </div>
+
+        <div class="usability-grid">
+            <div class="usability-card">
+                <h3>Why This Matters</h3>
+                <p>These accessibility issues create significant barriers for many users:</p>
+                <ul>
+                    <li>Low contrast and ineffiencies in layout/spacing makes content very difficult to read for users with visual impairments</li>
+                    <li>Poor keyboard navigation excludes users who cannot use a mouse</li>
+                    <li>Lack of keyboard shortcuts prevents efficient navigation for assistive technology users</li>
+                    <li>Non-responsive design makes the site unusable on mobile devices and tablets</li>
+
+                </ul>
+            </div>
+        </div>
+
+        <h2>Visual Redesign</h2>
+        <p>Based on the problems identified, I created a visual design style guide and mockups for various screen sizes.</p>
+
+        <div class="before-after">
+            <div class="image-comparison">
+                <h3>New Design: Style Guide</h3>
+                <p>The style guide features colors inspired by traditional Chinese aesthetics, with a rich red symbolizing luck and prosperity, complemented by a warm cream for balance. I aimed for a cleaner, sleeker look with improved contrast ratios and consistent typography.</p>
+            </div>
+            <div class="usability-image-container">
+                <img src="styleguide.png" alt="Screenshot showing the redesigned website interface" class="usability-image">
+            </div>
+        </div>
+
+        <h2>Mockups</h2>
+        <div class="usability-card">
+            <h3>Initial Mockups</h3>
+            <p>These were my first three mockups created in Figma. I focused on implementing the style guide elements while exploring different layouts and interaction patterns. Each mockup iteratively improved upon user feedback and usability considerations, helping me refine the final design direction.</p>
+        </div>
+        
+        <div class="mockup-container" style="display: flex; justify-content: space-between; flex-wrap: nowrap; gap: 20px;">
+            <div class="mockup-item" style="flex: 1; display: flex; flex-direction: column; align-items: center;">
+                <div style="width: 100%; height: 300px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+                    <img src="computer mockup.png" alt="First design mockup created in Figma" class="usability-image" style="width: 100%; height: 100%; object-fit: contain;">
+                </div>
+                <p class="mockup-caption">Mockup 1: Large Computer (~3840x2160px) </p>
+            </div>
+            
+            <div class="mockup-item" style="flex: 1; display: flex; flex-direction: column; align-items: center;">
+                <div style="width: 100%; height: 300px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+                    <img src="phone mockup.png" alt="Second design mockup created in Figma" class="usability-image" style="width: 100%; height: 100%; object-fit: contain;">
+                </div>
+                <p class="mockup-caption">Mockup 2: Tablet (~768x1024px)</p>
+            </div>
+            
+            <div class="mockup-item" style="flex: 1; display: flex; flex-direction: column; align-items: center;">
+                <div style="width: 100%; height: 300px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+                    <img src="tablet mockup.png" alt="Third design mockup created in Figma" class="usability-image" style="width: 100%; height: 100%; object-fit: contain;">
+                </div>
+                <p class="mockup-caption">Mockup 3: Phone (~375x667px)</p>
+            </div>
+        </div>
+        </div>
+
+        <h2>Feedback/Responsive Implementation</h2>
+        <ul>
+            <li>After receiving feedback on my initial designs, I realized there wasn't enough differentiation between layouts at different screen sizes.</li>
+            <li>The text on phone-sized screens would be too small to read with my original approach.</li>
+            <li>I refined my responsive strategy to better accommodate each device type:
+                <ul>
+                    <li>A three-column layout for large computers</li>
+                    <li>A two-column layout for tablets (with the "Your Order" section relocated to the bottom)</li>
+                    <li>A single-column layout for phones that allows users to comfortably scroll through all content while maintaining readability</li>
+                </ul>
+            </div>
+            </li>
+        </ul>
+
+        <div class="responsive-display">
+            <div class="device">
+                <h3>Desktop</h3>
+                <p>Three-column layout with ample space for menu items, allowing users to browse efficiently with categories on the left, menu items in the center, and cart on the right.</p>
+            </div>
+            
+            <div class="device">
+                <h3>Tablet</h3>
+                <p>Adapted layout with appropriate scaling, collapsing to a two-column design that maintains usability while optimizing for medium-sized screens.</p>
+            </div>
+            
+            <div class="device">
+                <h3>Mobile</h3>
+                <p>Single-column layout focusing on essential content, with a sticky header for navigation and a floating cart button for easy access during browsing.</p>
+            </div>
+        </div>
+<!-- Movie Section -->
+        <div class="movie-section">
+            <h2>Resizing Demo</h2>
+            <div class="video-container">
+                <video controls width="100%">
+                    <source src="resizingdemo.mov" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+
+        <div class="movie-section">
+            <h2>Language Change Demo</h2>
+            <div class="video-container">
+                <video controls width="100%">
+                    <source src="changelanguage.mov" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+        </div>
+
+
+
+        <h2>How does this redesign impact usability? </h2>
+        <ul>
+            <li><strong>Increased Efficiency:</strong> Removed redundant buttons and simplified navigation, which will allow users to more easily order food options. The updated website now shows all menu options at once and is overall simpler/cleaner - all while conveying the same information. </li>
+            <li><strong>Better Learnability/Intuitive Interactions:</strong> Added clear visual cues for adding items to cart and proceeding to checkout, eliminating confusion about how to add a menu item to cart. Also added in new buttons such as the +/- buttons to simplify adding/removing quantities of particular orders. </li>
+            <li><strong>Dynamic Resizing</strong> New implementation can be adapted to all screen sizes, allowing for people to view this webpage on mobile devices, tablets, and computers. This will allow people to easily order - regardless of device type. </li>
+        </ul>
+
+        <h2>How does this redesign impact accessibility?</h2>
+        <ul>
+            <li><strong>Enhanced Color Contrast:</strong> Replaced the problematic red text on yellow background with higher contrast color combinations that meet WCAG standards, making content readable for users with visual impairments</li>
+            <li><strong>Keyboard Navigation:</strong> Restructured the tab order to allow keyboard users to access important functions (like checkout) without navigating through hundreds of menu items first. This will allow disable people who cannot use mouses to easily navigate the website.</li>
+            <li><strong>Consistent Interactive Elements:</strong> Implemented clear visual indicators for clickable elements, visual patterns are now much more clear.</li>
+            <li><strong>Proper Screen Resizing:</strong> Increased text, button, and title sizes to be usable regardless of screen size,  making the site more usable for people with motor control disabilities.</li>
+        </ul>
+
+        <h2>Conclusion</h2>
+        <p>This project demonstrates my approach to identifying usability issues and implementing responsive design solutions. By focusing on user needs and following best practices in web design, I transformed a challenging interface into an intuitive and accessible experience.</p>
+        
+        <p>The redesigned website is now responsive across all device sizes while maintaining a consistent visual language and improving the overall user experience.</p>
+        
+        <p>View the website here: <a href="https://alexanderkoong.github.io/chongqingwebsite/" target="_blank">Chong Qing House Redesigned Website</a></p>
+    </div>
+
+</body>
+</html>
